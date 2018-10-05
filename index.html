@@ -23,35 +23,117 @@
     <title>mywebsite123</title>
   </head>
   <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="https://oukt.github.io/myWebsite0925/">LA 4:00p.m.</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="https://oukt.github.io/myWebsite0925/">首頁 <span class="sr-only">(current)</span></a>
-                    </li>
-                   
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        商品
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="https://oukt.github.io/shop/">籃球</a>
-                        <a class="dropdown-item" href="https://oukt.github.io/shop/">Zoom Kobe 系列</a>              
-                        <a class="dropdown-item" href="https://oukt.github.io/shop/">各隊球衣</a>
+     <!-- narbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="https://oukt.github.io/myWebsite0925/">LA 4:00p.m.</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="file:///C:/Users/user/Desktop/demo/mywebsite.html">首頁 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              商品
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://oukt.github.io/shop/">籃球</a>
+              <a class="dropdown-item" href="https://oukt.github.io/shop/">Zoom Kobe 系列</a>
+              <a class="dropdown-item" href="https://oukt.github.io/shop/">各隊球衣</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <a href="" class="btn btn-outline-danger mr-1" data-toggle="modal" data-target="#inputModal">登入</a>
+          <!-- 會員登入Modal -->
+          <div class=" modal fade " id="inputModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header bg-primary   text-white">
+                  <h5 class="modal-title" id="exampleModalLabel">登入</h5>
+                  <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form class="needs-validation" novalidate>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">姓名</label>
+                        <input type="email" class="form-control ml-2 mb-2" id="exampleInputEmail1" aria-describedby="emailHelp"
+                          placeholder="請輸入姓名" required>
                       </div>
-                    </li>
-                  </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                   <a href="" class="btn btn-outline-primary mr-2">登入</a>
-                   <a href="" class="btn btn-outline-primary">註冊</a>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">帳號</label>
+                    <input type="email" class="form-control ml-2 mb-2" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="請輸入電子郵件">
+                  </div>
+                  <div class="form-group">
+                      <label for="exampleInputPassword1">密碼</label>
+                      <input type="password" class="form-control ml-2" id="exampleInputPassword1" placeholder="請輸入密碼">
+                    </div>
                   </form>
                 </div>
-              </nav>
+                <div class="modal-footer">
+                  <a href="" class="mr-auto " data-dismiss="modal" data-toggle="modal" data-target="#exampleModal">還未註冊帳號</a>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">登入</button>
+                  <button type="button" class="btn btn-secondary">取消</button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <a href="" class="btn btn-outline-danger mr-1" data-toggle="modal" data-target="#exampleModal">註冊</a>
+          <!-- 會員註冊Modal -->
+          <div class=" modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                  <h5 class="modal-title" id="exampleModalLabel">會員註冊</h5>
+                  <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form class="needs-validation" novalidate>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">註冊會員名稱</label>
+                        <input type="text" class="form-control ml-2 mb-2" id="exampleInputEmail1" aria-describedby="emailHelp"
+                          placeholder="請輸入姓名" required>
+                      </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">註冊會員帳號</label>
+                    <input type="email" class="form-control ml-2 mb-2" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="請輸入電子郵件" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="exampleInputPassword1">註冊會員密碼</label>
+                      <input type="password" class="form-control ml-2" id="exampleInputPassword1" placeholder="請輸入密碼" required>
+                    </div>
+                  </form>
+  
+                </div>
+                <div class="modal-footer">
+                  <a href="" class="mr-auto" data-dismiss="modal" data-toggle="modal" data-target="#inputModal">已經有會員帳號</a>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">註冊</button>
+                  <button type="button" class="btn btn-secondary">取消</button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+  
+  
+  
+        </form>
+      </div>
+    </nav>
               <div class="dropdown ml-auto">
                 <button class=" btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <i class="fas fa-shopping-cart fa-3x"></i>
